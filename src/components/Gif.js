@@ -1,13 +1,14 @@
 import React from 'react';
+import './styles/Gif.css'
 
  const Gif = ({ title, url, id }) => {
     return (
-        <React.Fragment>
+        <a href={`#${id}`} className="Gif">
             <label>{title}</label>
             <img alt={title} src={url} /> 
             <span>ID: {id}</span>
             <br></br>
-        </React.Fragment>
+        </a>
     );
 }
 

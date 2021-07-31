@@ -1,6 +1,6 @@
 const apiKey = "gRpmuVUZ5amJyDaRzDMLLvWoa3tKS9tZ";
 
-const getGifs = async ({ keyword }) => {
+const getGifs = async ({ keyword = 'messi' } = {}) => {
     const apiURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=10&offset=0&rating=g&lang=en`;
 
     const res = await fetch(apiURL);
