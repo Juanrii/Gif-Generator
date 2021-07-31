@@ -1,5 +1,5 @@
 import React from 'react';
-import ListOfGifs from './components/ListOfGifs';
+import ListOfGifs from './components/ListOfGifs/ListOfGifs';
 import './App.css';
 import { Link, Route } from 'wouter';
 

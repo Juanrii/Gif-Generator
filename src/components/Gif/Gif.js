@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Gif.css'
+import './Gif.css'
 
  const Gif = ({ title, url, id }) => {
     return (
