@@ -1,12 +1,16 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import ListOfGifs from './components/ListOfGifs';
 import './App.css';
 
 function App() {
+  const [keyword, setKeyword] = useState('messi');
+
   return (
     <div className="App">
-      <header className="App-header">
-      
-      </header>
+      <section className="App-header">
+      <button onClick={() => setKeyword('san lorenzo')}>Cambiar Gif</button>
+       <ListOfGifs keyword={keyword} />
+      </section>
     </div>
   );
 }
